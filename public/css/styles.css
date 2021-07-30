@@ -26,6 +26,73 @@ body, html {
   min-height: 100vh;
 }
 
+/* line 2, ../../sass/partials/_modules.scss */
+.bg-dark-pink {
+  background-color: #ce729d !important;
+}
+/* line 5, ../../sass/partials/_modules.scss */
+.bg-footer {
+  background-attachment: scroll;
+  background-image: url(../img/footer.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 8, ../../sass/partials/_modules.scss */
+.bg-light-pink {
+  background-color: #ffded9 !important;
+}
+
+/* line 13, ../../sass/partials/_modules.scss */
+.border-dark-pink {
+  border-color: #ce729d !important;
+}
+/* line 16, ../../sass/partials/_modules.scss */
+.border-light-pink {
+  border-color: #ffded9 !important;
+}
+
+/* line 21, ../../sass/partials/_modules.scss */
+.contact-bg {
+  background-attachment: fixed;
+  background-image: url(../img/coming.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 26, ../../sass/partials/_modules.scss */
+.login-form, .register-form {
+  background-attachment: fixed;
+  background-image: url(../img/coming.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 31, ../../sass/partials/_modules.scss */
+.opacity-8 {
+  opacity: 0.8;
+}
+/* line 34, ../../sass/partials/_modules.scss */
+.opacity-9 {
+  opacity: 0.9;
+}
+
+/* line 44, ../../sass/partials/_modules.scss */
+.text-dark-pink {
+  color: #ce729d !important;
+}
+/* line 47, ../../sass/partials/_modules.scss */
+.text-light-pink {
+  color: #ffded9 !important;
+}
+
+/* line 51, ../../sass/partials/_modules.scss */
+textarea {
+  resize: none;
+}
+
 /* line 31, ../../sass/partials/_mixins.scss */
 .error-s1 {
   background-attachment: fixed;
