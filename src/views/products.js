@@ -1,11 +1,11 @@
 import React,{Component} from "react";
-
+import ProductsList from "../components/products_list";
 
 class Products extends Component{
     render(){
         return(          
-            <main className="minh-100vh">     
-
+            <main className="minh-footer-adj bg-products">     
+                <ProductsList/>
             </main>
         );
     }

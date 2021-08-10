@@ -1,12 +1,29 @@
+.about{
+    &-desc{
+        @include set-background($bg__about-desc-img,0,"top left","cover","scroll");
+    }
+    &-ext{
+        @include set-background($bg__about-ext-img,0,"top right","cover","scroll");
+    }
+}
 .bg{
+    &-basket{
+        @include set-background($bg__basket-img,0,"top right","cover","fixed");
+    }
     &-dark-pink{
         background-color: $color__dark-pink !important;
     }
     &-footer{
         @include set-background($bg__footer-img,0,"center left","cover","scroll");
     }
+    &-home{
+        @include set-background($bg__home-img,0,"center right","cover","scroll");
+    }
     &-light-pink{
         background-color: $color__light-pink !important;
+    }
+    &-products{
+        @include set-background($bg__products-img,0,"top right","cover","fixed");
     }
 }
 .border{
