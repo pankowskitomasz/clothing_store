@@ -1,11 +1,11 @@
 import React,{Component} from "react";
-
+import StoreContent from "../components/store_content";
 
 class Store extends Component{
     render(){
         return(          
-            <main className="minh-100vh">     
-
+            <main className="minh-footer-adj bg-products">     
+                <StoreContent/>
             </main>
         );
     }

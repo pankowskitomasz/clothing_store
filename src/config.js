@@ -13,9 +13,9 @@ import Store from "./views/store";
 
 const appCfg = {
     routes:[
-        {navItem:true, exact:true, path:"/",name:"Home",view:<Home/>},
-        {navItem:true, exact:true, path:"/products",name:"Products",view:<Products/>},
+        {navItem:true, exact:true, path:"/",name:"Home",view:<Home backLink={{name:"See now",path:"/store"}}/>},
         {navItem:true, exact:true, path:"/store",name:"Store",view:<Store/>},
+        {navItem:true, exact:true, path:"/products",name:"Products",view:<Products/>},
         {navItem:true, exact:true, path:"/about",name:"About",view:<About/>},
         {navItem:true, exact:true, path:"/contact",name:"Contact",view:<Contact/>},
         {navItem:true, exact:true, path:"/basket",name:<span className="fa fa-shopping-cart"></span>,view:<Basket/>},
