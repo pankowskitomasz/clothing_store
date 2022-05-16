@@ -1,29 +1,20 @@
+@include aoa-bg-series($bg__init,$classes_init);
+
 .about{
-    &-desc{
-        @include set-background($bg__about-desc-img,0,"top left","cover","scroll");
-    }
-    &-ext{
-        @include set-background($bg__about-ext-img,0,"top right","cover","scroll");
+    &-s3{
+        background-blend-mode: multiply !important;
+        background-color: #999 !important;
     }
 }
 .bg{
-    &-basket{
-        @include set-background($bg__basket-img,0,"top right","cover","fixed");
-    }
     &-dark-pink{
         background-color: $color__dark-pink !important;
     }
     &-footer{
         @include set-background($bg__footer-img,0,"center left","cover","scroll");
     }
-    &-home{
-        @include set-background($bg__home-img,0,"center right","cover","scroll");
-    }
     &-light-pink{
         background-color: $color__light-pink !important;
-    }
-    &-products{
-        @include set-background($bg__products-img,0,"top right","cover","fixed");
     }
 }
 .border{
@@ -35,8 +26,9 @@
     }
 }
 .contact{
-    &-bg{
-        @include set-background($bg__contact-img,0,"top center","cover","fixed");
+    &-s3{
+        background-blend-mode: multiply !important;
+        background-color: #444 !important;
     }
 }
 .login{
@@ -52,6 +44,12 @@
         opacity: 0.9;
     }
 }
+.products{
+    &-s3{
+        background-color: #999!important;
+        background-blend-mode: multiply!important;
+    }
+}
 .register{
     &-form{
         @extend .login-form;
@@ -65,6 +63,69 @@
         color: $color__light-pink !important;
     }
 }
+nav{
+    z-index: 10;
+}
 textarea{
     resize: none;
+}
+@media all and (max-width: 767px){
+    .about{
+        &-s1,&-s2,&-s3{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+        &-s1,&-s3{
+            background-position: right!important;
+        }
+    }
+    .contact{
+        &-s1{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+    .index{
+        &-s1{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+    .navbar{
+        &-toggler{
+            background-color: #666;
+            border-color: #333;
+        }
+        &-nav{
+            background-color: #666;
+            border: 1px solid #333;
+            opacity: 0.9;
+            padding: 10px
+        }
+    }
+    .products{
+        &-s1,&-s2{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+        &-s1{
+            background-position: right!important;
+        }
+    }
 }

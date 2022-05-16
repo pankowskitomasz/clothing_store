@@ -1,4 +1,4 @@
-@include aoa-bg-series($bg__classes,$bg__aoa);
+
 %bg-tmp{
     @include calc-param(min-height, $section__min-height, $header__height);
 }
