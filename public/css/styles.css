@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "KaushanScript";
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
 /* line 1, ../../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -177,17 +181,32 @@ body, html {
   background-size: cover;
 }
 
-/* line 4, ../../sass/partials/_modules.scss */
+@media all and (orientation: portrait) {
+  /* line 3, ../../sass/partials/_modules.scss */
+  .index-s1 {
+    background-position-x: 40% !important;
+  }
+
+  /* line 7, ../../sass/partials/_modules.scss */
+  .products-s1, .about-s1 {
+    background-position-x: 65% !important;
+  }
+  /* line 10, ../../sass/partials/_modules.scss */
+  .products-s2, .about-s2 {
+    background-position-x: 50% !important;
+  }
+}
+/* line 18, ../../sass/partials/_modules.scss */
 .about-s3 {
   background-blend-mode: multiply !important;
   background-color: #999 !important;
 }
 
-/* line 10, ../../sass/partials/_modules.scss */
+/* line 24, ../../sass/partials/_modules.scss */
 .bg-dark-pink {
   background-color: #c75f8f !important;
 }
-/* line 13, ../../sass/partials/_modules.scss */
+/* line 27, ../../sass/partials/_modules.scss */
 .bg-footer {
   background-attachment: scroll;
   background-image: url(../img/footer.jpg);
@@ -195,27 +214,27 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 16, ../../sass/partials/_modules.scss */
+/* line 30, ../../sass/partials/_modules.scss */
 .bg-light-pink {
   background-color: #ffded9 !important;
 }
 
-/* line 21, ../../sass/partials/_modules.scss */
+/* line 35, ../../sass/partials/_modules.scss */
 .border-dark-pink {
   border-color: #c75f8f !important;
 }
-/* line 24, ../../sass/partials/_modules.scss */
+/* line 38, ../../sass/partials/_modules.scss */
 .border-light-pink {
   border-color: #ffded9 !important;
 }
 
-/* line 29, ../../sass/partials/_modules.scss */
+/* line 43, ../../sass/partials/_modules.scss */
 .contact-s3 {
   background-blend-mode: multiply !important;
   background-color: #444 !important;
 }
 
-/* line 35, ../../sass/partials/_modules.scss */
+/* line 49, ../../sass/partials/_modules.scss */
 .login-form, .register-form {
   background-attachment: fixed;
   background-image: url(../img/coming.jpg);
@@ -224,84 +243,90 @@ body, html {
   background-size: cover;
 }
 
-/* line 40, ../../sass/partials/_modules.scss */
+/* line 54, ../../sass/partials/_modules.scss */
 .opacity-8 {
   opacity: 0.8;
 }
-/* line 43, ../../sass/partials/_modules.scss */
+/* line 57, ../../sass/partials/_modules.scss */
 .opacity-9 {
   opacity: 0.9;
 }
 
-/* line 48, ../../sass/partials/_modules.scss */
+/* line 62, ../../sass/partials/_modules.scss */
 .products-s3 {
   background-color: #999 !important;
   background-blend-mode: multiply !important;
 }
 
-/* line 59, ../../sass/partials/_modules.scss */
+/* line 73, ../../sass/partials/_modules.scss */
 .text-dark-pink {
   color: #c75f8f !important;
 }
-/* line 62, ../../sass/partials/_modules.scss */
+/* line 76, ../../sass/partials/_modules.scss */
 .text-light-pink {
   color: #ffded9 !important;
 }
 
-/* line 66, ../../sass/partials/_modules.scss */
+/* line 80, ../../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "KaushanScript";
+  letter-spacing: 2px;
+}
+
+/* line 84, ../../sass/partials/_modules.scss */
 nav {
   z-index: 10;
 }
 
-/* line 69, ../../sass/partials/_modules.scss */
+/* line 87, ../../sass/partials/_modules.scss */
 textarea {
   resize: none;
 }
 
 @media all and (max-width: 767px) {
-  /* line 74, ../../sass/partials/_modules.scss */
+  /* line 92, ../../sass/partials/_modules.scss */
   .about-s1, .about-s2, .about-s3 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 75, ../../sass/partials/_modules.scss */
+  /* line 93, ../../sass/partials/_modules.scss */
   .about-s1 *, .about-s2 *, .about-s3 * {
     color: #fff !important;
     text-shadow: 1px 1px 4px #000;
   }
-  /* line 82, ../../sass/partials/_modules.scss */
+  /* line 100, ../../sass/partials/_modules.scss */
   .about-s1, .about-s3 {
     background-position: right !important;
   }
 
-  /* line 87, ../../sass/partials/_modules.scss */
+  /* line 105, ../../sass/partials/_modules.scss */
   .contact-s1 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 88, ../../sass/partials/_modules.scss */
+  /* line 106, ../../sass/partials/_modules.scss */
   .contact-s1 * {
     color: #fff !important;
     text-shadow: 1px 1px 4px #000;
   }
 
-  /* line 97, ../../sass/partials/_modules.scss */
+  /* line 115, ../../sass/partials/_modules.scss */
   .index-s1 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 98, ../../sass/partials/_modules.scss */
+  /* line 116, ../../sass/partials/_modules.scss */
   .index-s1 * {
     color: #fff !important;
     text-shadow: 1px 1px 4px #000;
   }
 
-  /* line 107, ../../sass/partials/_modules.scss */
+  /* line 125, ../../sass/partials/_modules.scss */
   .navbar-toggler {
     background-color: #666;
     border-color: #333;
   }
-  /* line 111, ../../sass/partials/_modules.scss */
+  /* line 129, ../../sass/partials/_modules.scss */
   .navbar-nav {
     background-color: #666;
     border: 1px solid #333;
@@ -309,17 +334,17 @@ textarea {
     padding: 10px;
   }
 
-  /* line 119, ../../sass/partials/_modules.scss */
+  /* line 137, ../../sass/partials/_modules.scss */
   .products-s1, .products-s2 {
     background-blend-mode: multiply !important;
     background-color: #999 !important;
   }
-  /* line 120, ../../sass/partials/_modules.scss */
+  /* line 138, ../../sass/partials/_modules.scss */
   .products-s1 *, .products-s2 * {
     color: #fff !important;
     text-shadow: 1px 1px 4px #000;
   }
-  /* line 127, ../../sass/partials/_modules.scss */
+  /* line 145, ../../sass/partials/_modules.scss */
   .products-s1 {
     background-position: right !important;
   }
