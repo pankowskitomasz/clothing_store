@@ -1,4 +1,18 @@
 @include aoa-bg-series($bg__init,$classes_init);
+@media all and (orientation: portrait){
+    .index-s1{
+        background-position-x: 40%!important;
+    }
+    .products,.about{
+        &-s1{
+            background-position-x: 65%!important;
+        }
+        &-s2{
+
+            background-position-x: 50%!important;
+        }
+    }
+}
 
 .about{
     &-s3{
@@ -62,6 +76,10 @@
     &-light-pink{
         color: $color__light-pink !important;
     }
+}
+h1,h2,h3,h4,h5,h6,.nav-link{
+    font-family: "KaushanScript";
+    letter-spacing: 2px;
 }
 nav{
     z-index: 10;
